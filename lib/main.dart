@@ -79,6 +79,31 @@ class MyHomePage extends StatelessWidget{
                 ),
               );
             }).toList(),
+          ),
+          Card(
+            elevation: 5,
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Título'
+                    ),
+                  ),
+                  TextField(
+                    decoration: InputDecoration(
+                      labelText: 'Valor (R\$)'
+                    )
+                  ),
+                  FlatButton(
+                    onPressed: (){},
+                    child: Text('Nova Transação'),
+                    textColor: Colors.purple,
+                  )
+                ],
+              ),
+            ),
           )
         ]
       ),
